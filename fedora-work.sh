@@ -18,5 +18,4 @@ rpm -i https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-font
 dnf -y groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
 dnf -y groupupdate sound-and-video
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install flathub org.telegram.desktop
 systemctl set-default graphical.target
