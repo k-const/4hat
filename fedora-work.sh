@@ -11,7 +11,7 @@ dnf -y upgrade
 dnf -y groupupdate core
 
 ## installing gnome
-dnf -y install adwaita-qt4 adwaita-qt5 cabextract cups-pdf dnfdragora file-roller-nautilus firewall-config \
+dnf -y install adwaita-qt5 adwaita-qt6 cabextract cups-pdf dnfdragora file-roller-nautilus firewall-config \
 flatpak gdm gnome-shell gnome-terminal gnome-terminal-nautilus gutenprint-cups microsoft-edge-stable \
 nautilus nautilus-extensions nautilus-search-tool thunderbird torbrowser-launcher xorg-x11-font-utils
 rpm -i https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
