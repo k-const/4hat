@@ -19,4 +19,4 @@ dnf -y groupupdate multimedia --setop="install_weak_deps=False" --exclude=Packag
 dnf -y groupupdate sound-and-video
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 systemctl set-default graphical.target
-plymouth-set-default-theme tribar -R
+plymouth-set-default-theme details -R
