@@ -2,7 +2,7 @@
 
 ## adding repos
 echo "fastestmirror=1" >> /etc/dnf/dnf.conf
-dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
+dnf -y install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
 https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 rpm --import https://packages.microsoft.com/keys/microsoft.asc
 dnf config-manager --add-repo https://packages.microsoft.com/yumrepos/edge
