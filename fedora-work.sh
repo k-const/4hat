@@ -11,9 +11,9 @@ dnf -y groupupdate core
 
 ## installing gnome
 dnf -y install adwaita-qt5 adwaita-qt6 cabextract code cups-pdf dnfdragora file-roller-nautilus \
-firewall-config flatpak gdm gnome-shell gnome-terminal gnome-terminal-nautilus gutenprint-cups \
-microsoft-edge-stable nautilus nautilus-extensions nautilus-search-tool thunderbird torbrowser-launcher \
-xorg-x11-font-utils
+firewall-config flatpak gdm gnome-shell gnome-terminal gnome-terminal-nautilus google-noto-cjk-fonts \
+google-noto-emoji-color-fonts gutenprint-cups microsoft-edge-stable nautilus nautilus-extensions \
+nautilus-search-tool qgnomeplatform system-config-printer unifont-fonts xorg-x11-font-utils
 rpm -i https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
 dnf -y groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
 dnf -y groupupdate sound-and-video
