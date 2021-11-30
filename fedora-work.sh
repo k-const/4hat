@@ -14,7 +14,7 @@ dnf -y install adwaita-qt5 adwaita-qt6 cabextract code cups-pdf dnfdragora file-
 firewall-config flatpak gdm gnome-shell gnome-terminal gnome-terminal-nautilus google-noto-cjk-fonts \
 google-noto-emoji-color-fonts gutenprint-cups microsoft-edge-stable nautilus nautilus-extensions \
 nautilus-search-tool NetworkManager-adsl NetworkManager-l2tp-gnome NetworkManager-ppp \
-NetworkManager-pptp-gnome NetworkManager-sstp-gnome NetworkManager-wwan qgnomeplatform \
+NetworkManager-pptp-gnome NetworkManager-sstp-gnome NetworkManager-wwan ntfs-3g qgnomeplatform \
 system-config-printer unifont-fonts usb_modeswitch xorg-x11-font-utils
 rpm -i https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
 dnf -y groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
