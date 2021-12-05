@@ -1,6 +1,7 @@
 #!/bin/bash
 
 ## adding repos
+echo "http_caching=packages" >> /etc/dnf/dnf.conf
 echo "fastestmirror=1" >> /etc/dnf/dnf.conf
 dnf -y install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 rpm --import https://packages.microsoft.com/keys/microsoft.asc
